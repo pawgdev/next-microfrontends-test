@@ -1,0 +1,11 @@
+{
+  "name": "next-microfrontends-test",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "homepage": "https://github.com/pawgdev/next-microfrontends-test#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawgdev/next-microfrontends-test.git"
+  }
+}
