@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Link from "next/link";
 
 const Home: NextPage = () => {
     return (
@@ -55,8 +54,8 @@ const Home: NextPage = () => {
                 <nav>
                     <h2>Go to</h2>
                     <ul>
-                        <li><Link href="/"><a>Home</a></Link></li>
-                        <li><Link href="/be"><a>Belgium</a></Link></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/be">Belgium</a></li>
                     </ul>
                 </nav>
             </main>
