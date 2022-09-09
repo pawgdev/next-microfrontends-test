@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link';
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -51,19 +52,19 @@ const Home: NextPage = () => {
                         </p>
                     </a>
                 </div>
-            </main>
-
-            <footer className={styles.footer}>
                 <nav>
                     <h2>Go to</h2>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/fr">France</a></li>
-                        <li><a href="/be/foo">Foo</a></li>
-                        <li><a href="/be/bar">Bar</a></li>
-                        <li><a href="/be/baz">Baz</a></li>
+                        <li><Link href="/"><a>Home</a></Link></li>
+                        <li><Link href="/fr"><a>France</a></Link></li>
+                        <li><Link href="/be/foo"><a>Foo</a></Link></li>
+                        <li><Link href="/be/bar"><a>Bar</a></Link></li>
+                        <li><Link href="/be/baz"><a>Baz</a></Link></li>
                     </ul>
                 </nav>
+            </main>
+
+            <footer className={styles.footer}>
                 <a
                     href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
                     target="_blank"
@@ -71,8 +72,8 @@ const Home: NextPage = () => {
                 >
                     Powered by{' '}
                     <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16}/>
-          </span>
+                        <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16}/>
+                    </span>
                 </a>
             </footer>
         </div>
