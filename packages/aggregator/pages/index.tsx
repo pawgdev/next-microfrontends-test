@@ -62,6 +62,13 @@ const Home: NextPage = () => {
       </main>
 
       <footer className={styles.footer}>
+          <nav>
+              <h2>Go to</h2>
+              <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/be">Belgium</a></li>
+              </ul>
+          </nav>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
