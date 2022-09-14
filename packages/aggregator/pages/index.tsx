@@ -56,7 +56,8 @@ const Home: NextPage = () => {
                     <h2>Select your country</h2>
                     <ul>
                         <li><a href="/fr">France</a></li>
-                        <li><a href="/be">Belgium</a></li>
+                        <li><a href="/befr">Belgium French</a></li>
+                        <li><a href="/benl">Belgium Dutch</a></li>
                     </ul>
                 </nav>
             </main>

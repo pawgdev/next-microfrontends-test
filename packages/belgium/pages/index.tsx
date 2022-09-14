@@ -1,9 +1,14 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link';
+import { useRouter } from "next/router";
+import CustomLink from '../components/Link';
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+    const { locale } = useRouter();
+
     return (
         <div className={styles.container}>
             <Head>
@@ -14,7 +19,7 @@ const Home: NextPage = () => {
 
             <main className={styles.main}>
                 <h1 className={styles.title}>
-                    Welcome to <a href="https://nextjs.org">Belgium Next.js!</a>
+                    Welcome to <a href="https://nextjs.org">Belgium {locale} Next.js!</a>
                 </h1>
 
                 <p className={styles.description}>
@@ -56,9 +61,13 @@ const Home: NextPage = () => {
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="/fr">France</a></li>
-                        <li><a href="/be/foo">Foo</a></li>
-                        <li><a href="/be/bar">Bar</a></li>
-                        <li><a href="/be/baz">Baz</a></li>
+                        <li><Link href={`/${locale}/foo`}><a>Foo with Link</a></Link></li>
+                        {/*<li><Link href={`/foo`}><a>Foo with Link v2</a></Link></li>*/}
+                        {/*<li><CustomLink href={`/foo`}><a>Foo with CustomLink</a></CustomLink></li>*/}
+                        <li><a href={`${locale}/foo`}>Foo for aggregate</a></li>
+                        <li><a href={`/${locale}/foo`}>Foo</a></li>
+                        <li><a href={`/${locale}/bar`}>Bar</a></li>
+                        <li><a href={`/${locale}/baz`}>Baz</a></li>
                     </ul>
                 </nav>
             </main>

@@ -26,6 +26,22 @@ const nextConfig = {
                 source: "/be/:path*",
                 destination: `${BELGIUM_URL}/be/:path*`,
             },
+            {
+                source: "/benl",
+                destination: `${BELGIUM_URL}/be/benl`,
+            },
+            {
+                source: "/benl/:path*",
+                destination: `${BELGIUM_URL}/be/benl/:path*`,
+            },
+            {
+                source: "/befr",
+                destination: `${BELGIUM_URL}/be/befr`,
+            },
+            {
+                source: "/befr/:path*",
+                destination: `${BELGIUM_URL}/be/befr/:path*`,
+            },
         ];
     },
 }
